@@ -457,6 +457,12 @@
   left: 50%;
   transform: translateX(-50%);
 }
+#wrap main #contact .contact_inner .contact_info .address {
+  font-size: 15x;
+}
+#wrap main #contact .contact_inner .contact_info .phone {
+  font-size: 15x;
+}
 #wrap main #contact .contact_inner .contact_info img {
   width: 150px;
   height: 150px;

@@ -227,7 +227,7 @@
                             }
                         }
                         .project_04 {
-                            .sequence{
+                            .sequence{ 
                                 color: #EBD29B ;
                             }
                             .prototype{
@@ -320,8 +320,10 @@
                     .main {font-size: 82px; font-weight: 700;}
                 }
                 .contact_info {
-                    @include flex-col;@include flex-center; gap:10px;
+                    @include flex-col;@include flex-center; gap:10px; 
                     position: absolute; bottom:-300px; left:50%;transform: translateX(-50%);
+                    .address {font-size: 15x;}
+                    .phone {font-size: 15x;}
                     img {
                         width: 150px; height: 150px;
                     }
