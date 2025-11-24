@@ -12,11 +12,15 @@
             ul {
                 @include flex-row; gap: 80px;
                 li {
-                    font-size: $font-size-15;
-                    color:#bbb; 
+                    button{
+                        font-size: $font-size-15;
+                        color:#bbb; font-weight:300;
+                    }
                 }
                 .active {
-                    color:#222;
+                    button {
+                        color:#222;
+                    }
                 }
             }
         }
@@ -178,39 +182,65 @@
                         }
                         .project_01 {  
                             .left_info{
-                                .sequence {color: #DD8686;}
+                                .sequence {color:#E38B8C}
                                 .prototype{
-                                    background: #DD8686;
+                                    background: #E38B8C
                                 }
                             }
                             .project_bg {
                                 background: linear-gradient(
                                 90deg,
-                                #e38b8c 0%, /* 진한 쪽 */
-                                #F0B2B3 33%,     
-                                #F7D6D6  66%,
-                                #f9f9f9 100%      
+                                #E38B8C 0%,   /* 진한 로즈 */
+                                #F0B2B3 55%, /* 파스텔 로즈 */
+                                #FDE6E6 100% /* 거의 화이트에 가까운 핑크 */
                             );}
                             }
                         .project_02 {
                             .left_info{
-                                .sequence {color: #4D83FF;}
+                                .sequence {color: #87A6EE;}
                                 .prototype{
-                                    background: #4D83FF;
+                                    background: #87A6EE;
                                 }
                             }
                             .project_bg {
                                 background: linear-gradient(
                                 90deg,
-                                #4D83FF 0%,
-                                #82A6FF 50%,
-                                #BDD1FF 75%,
+                                #87A6EE 0%,
+                                #9DB1F0 55%,
                                 #FFFFFF 100%
                                 );
                             }
                         }
-                        .project_03 {}
-                        .project_04 {}
+                        .project_03 {
+                            .sequence{
+                                color: #F18DBD ;
+                            }
+                            .prototype{
+                                background-color: #F18DBD ;
+                            }
+                            .project_bg {background: linear-gradient(
+                                90deg,
+                                #F18DBD 0%,    /* 시작 - 진한 핑크 */
+                                #F7BBD3 55%,  /* 중간 - 파스텔 톤 */
+                                #FEEAF3 100%  /* 끝 - 거의 화이트 */
+                                );
+                            }
+                        }
+                        .project_04 {
+                            .sequence{
+                                color: #EBD29B ;
+                            }
+                            .prototype{
+                                background-color: #EBD29B ;
+                            }
+                            .project_bg { background: linear-gradient(
+                                90deg,
+                                #EBD29B 0%,    /* 시작 - 따뜻한 라이트 옐로우 */
+                                #F3E3C1 55%,  /* 중간 - 파스텔 베이지 */
+                                #FFF7EB 100%  /* 끝 - 아이보리 화이트 */
+                                );
+                            }
+                        }
                     }
                     .pagination_btn {
                         position: absolute;bottom:35px; left: 5px;

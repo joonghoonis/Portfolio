@@ -27,11 +27,12 @@
   flex-flow: row nowrap;
   gap: 80px;
 }
-#wrap header nav ul li {
+#wrap header nav ul li button {
   font-size: 0.938rem;
   color: #bbb;
+  font-weight: 300;
 }
-#wrap header nav ul .active {
+#wrap header nav ul .active button {
   color: #222;
 }
 #wrap header .logo {
@@ -303,22 +304,40 @@
   flex: 1;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .sequence {
-  color: #DD8686;
+  color: #E38B8C;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .prototype {
-  background: #DD8686;
+  background: #E38B8C;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .project_bg {
-  background: linear-gradient(90deg, #e38b8c 0%, #F0B2B3 33%, #F7D6D6 66%, #f9f9f9 100%);
+  background: linear-gradient(90deg, #E38B8C 0%, #F0B2B3 55%, #FDE6E6 100%);
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .sequence {
-  color: #4D83FF;
+  color: #87A6EE;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .prototype {
-  background: #4D83FF;
+  background: #87A6EE;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .project_bg {
-  background: linear-gradient(90deg, #4D83FF 0%, #82A6FF 50%, #BDD1FF 75%, #FFFFFF 100%);
+  background: linear-gradient(90deg, #87A6EE 0%, #9DB1F0 55%, #FFFFFF 100%);
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .sequence {
+  color: #F18DBD;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .prototype {
+  background-color: #F18DBD;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .project_bg {
+  background: linear-gradient(90deg, #F18DBD 0%, #F7BBD3 55%, #FEEAF3 100%);
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .sequence {
+  color: #EBD29B;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .prototype {
+  background-color: #EBD29B;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .project_bg {
+  background: linear-gradient(90deg, #EBD29B 0%, #F3E3C1 55%, #FFF7EB 100%);
 }
 #wrap main #project .project_inner .swiper .pagination_btn {
   position: absolute;
