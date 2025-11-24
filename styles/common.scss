@@ -1,0 +1,42 @@
+$font-size-12:0.75rem;
+$font-size-13:0.813rem;
+$font-size-14:0.875rem;
+$font-size-15:0.938rem;
+$font-size-18:1.125rem;
+$font-size-22:1.375rem;
+$font-size-26:1.625rem;
+$font-size-34:2.125rem;
+$font-size-40:2.5rem;
+$font-weight-ragular:400;
+$font-weight-medium:500;
+$font-weight-semi:600;
+$font-weight-bold:700;
+$color-white:#fff;
+$color-black:#000;
+$color-dark-gray:#333;
+$color-light-gray:#ddd;
+$color-gray:#999;
+$color-point:#FD4802;
+$line-height-140:140%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@mixin flex-row {
+    display: flex;
+    flex-flow: row nowrap; 
+}
+@mixin flex-col {
+    display: flex;
+    flex-flow: column nowrap;
+}
+@mixin flex-center {
+    justify-content: center;
+    align-items: center;
+}
+@mixin bgimg {
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

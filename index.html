@@ -11,9 +11,296 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="./scripts/index.js" defer></script>
+    <script src="./script/index.js" defer></script>
 </head>
 <body>
-    
+    <div id="wrap">
+        <header>
+            <nav>
+                <ul>
+                    <li class="active">Home</li>
+                    <li>Profile</li>
+                    <li>Project</li>
+                    <li>Banner&Details</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <a href="#" class="logo">
+                <img src="./images/github_logo.png" alt="">
+            </a>
+        </header>
+        <main>
+            <div id="home">
+                <div class="home_inner">
+                    <span class="year">2025</span>
+                    <h1 class="title">Web-Publisher</h1>
+                    <span class="name">Shin Joong Hoon</span>
+                </div>
+            </div>
+            <div id="profile">
+                <div class="profile_inner">
+                    <div class="left_content">
+                        <h2 class="introduction">사용자에게 <span>직관적</span>이고 <span>아름다운</span> <br>
+                            <span>웹 경험</span>을 제공하는 <em>퍼블리셔</em>가 되겠습니다!</h2>
+                        <div class="picture">
+                            <img src="./images/profile.jpg" alt="">
+                        </div>
+                        <div class="about">
+                            <div class="row_top">
+                                <p class="section">About Me ::</p>
+                                <span class="name">신중훈</span>
+                                <span class="birth">1999.08.21</span>
+                            </div>
+                            <div class="row">
+                                <span class="info">+82 10 6581 9971</span>
+                                <span class="info">tlswndgns99@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="license">
+                            <p class="section">License ::</p>
+                            <div class="row">
+                                <div class="row_in">
+                                    <span class="years">2021.12</span>
+                                    <span class="name">행정관리사</span>
+                                </div>
+                                <div class="row_in">
+                                    <span class="years">2019.07</span>
+                                    <span class="name">운전면허증 2종 보통</span>
+                                </div>
+                                <div class="row_in">
+                                    <span class="years">2017.06</span>
+                                    <span class="name">자동화 설비 기능사</span>
+                                </div>
+                                <div class="row_in">
+                                    <span class="years">2010.01</span>
+                                    <span class="name">ITQ 한글파워포인트</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education">
+                            <p class="section">Education ::</p>
+                            <div class="row">
+                                <div class="row_in">
+                                    <span class="years">2025.11</span>
+                                    <span class="name">UI/UX웹디자인&웹퍼블리셔 수료</span>
+                                </div>
+                                <div class="row_in">
+                                    <span class="years">2018.12</span>
+                                    <span class="name">명지전문대학교 소프트웨어학과 (1년재학)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_content">
+                        <p class="section">Skill ::</p>
+                        <div class="skill_wrap">
+                            <div class="skill_category">
+                                <h4 class="category_title">Front-End</h4>
+                                <dl class="skill-list">
+                                    <div class="skill-item">
+                                        <dt>HTML5 (Semantic Mark Up)</dt>
+                                        <dd>웹표준에 맞는 시맨틱 마크업 구조 설계 가능</dd>
+                                    </div>
+                                    <div class="skill-item">
+                                        <dt>CSS3 / SCSS</dt>
+                                        <dd>반응형 레이아웃·공통 컴포넌트 스타일링 가능</dd>
+                                    </div>
+                                    <div class="skill-item">
+                                        <dt>Responsive Web / Media Query</dt>
+                                        <dd>PC·태블릿·모바일 대응 반응형 페이지 구현 가능</dd>
+                                    </div>
+                                    <div class="skill-item">
+                                        <dt>JavaScript (ES6+)</dt>
+                                        <dd>DOM 제어·이벤트 처리로 기본 인터랙션 구현 가능</dd>
+                                    </div>
+                                    <div class="skill-item">
+                                        <dt>Swiper.js</dt>
+                                        <dd>메인 비주얼·상품 슬라이드 커스터마이징 구현 가능</dd>
+                                    </div>
+                                    <div class="skill-item">
+                                        <dt>jQery</dt>
+                                        <dd>탭·드롭다운·간단한 애니메이션 UI 구현 가능</dd>
+                                    </div>
+                                    <div class="skill-item">
+                                        <dt>Git Hub</dt>
+                                        <dd>개인·포트폴리오 프로젝트 버전 관리 및 배포 경험 있음</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="skill_category">
+                                <h4 class="category_title">Design & Tools</h4>
+                                <dl class="skill-list">
+                                    <div class="skill-item">
+                                        <dt>Figma</dt>
+                                        <dd>와이어프레임·페이지 시안·프로토타입 제작 가능</dd>
+                                    </div>
+                                    <div class="skill-item">
+                                        <dt>Photoshop</dt>
+                                        <dd>웹 배너·썸네일 제작 및 기본 이미지 보정 가능</dd>
+                                    </div>
+                                    <div class="skill-item">
+                                        <dt>Illustrator</dt>
+                                        <dd>아이콘·간단한 일러스트 등 벡터 그래픽 제작 가능</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="skill_category">
+                                <h4 class="category_title">UI / UX</h4>
+                                <dl class="skill-list">
+                                    <div class="skill-item">
+                                        <dt>Wireframing & Layout Design</dt>
+                                        <dd>화면 구조·콘텐츠 배치 기획 및 와이어프레임 작성 가능</dd>
+                                    </div>
+                                    <div class="skill-item">
+                                        <dt>Usability-focused Screen Planning</dt>
+                                        <dd>사용성 고려한 화면 흐름·네비게이션 설계 가능</dd>
+                                    </div>
+                                    <div class="skill-item">
+                                        <dt>Mobile / Web Interface Design</dt>
+                                        <dd>웹·모바일 인터페이스 디자인 가이드 제작 가능</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="skill_category">
+                                <h4 class="category_title">E-commerce</h4>
+                                <dl class="skill-list">
+                                    <div class="skill-item">
+                                        <dt>Cafe24</dt>
+                                        <dd>스마트디자인 환경에서 스킨 커스터마이징·페이지 퍼블리싱 가능</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div id="project">
+                <div class="project_inner">
+                    <div class="swiper" id="project_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide project_01">
+                                <div class="left_info">
+                                    <div class="top">
+                                        <h4 class="sequence">Web-Redesign 01</h4>
+                                        <h1 class="title">나무엑터스<span>Namoo-Actors</span></h1>
+                                    </div>
+                                    <div class="desc">
+                                        <dl class="desc_period">
+                                            <dt>제작기간 ::</dt>
+                                            <dd>25.11.03~</dd>
+                                        </dl>
+                                        <dl class="desc_contribution">
+                                            <dt>기여도 ::</dt>
+                                            <dd>개인 100%</dd>
+                                        </dl>
+                                        <dl class="desc_tool">
+                                            <dt>사용 프로그램 ::</dt>
+                                            <dd>Html5, Css3, JavaScript(ES6+), Photoshop, Figma</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="proto_btn">
+                                        <a href="#" class="prototype">프로토타입</a>
+                                        <a href="#" class="figma">피그마</a>
+                                        <a href="#" class="original_site">원본사이트<img src="./images/arrow_upward_alt.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="project_bg"></div>
+                            </div>
+                            <div class="swiper-slide project_02">
+                                <div class="left_info">
+                                    <div class="top">
+                                        <h4 class="sequence">Web-Redesign 02</h4>
+                                        <h1 class="title">삼성 라이온즈<span>Samsung-Lions</span></h1>
+                                    </div>
+                                    <div class="desc">
+                                        <dl class="desc_period">
+                                            <dt>제작기간 ::</dt>
+                                            <dd>25.11.03~</dd>
+                                        </dl>
+                                        <dl class="desc_contribution">
+                                            <dt>기여도 ::</dt>
+                                            <dd>개인 100%</dd>
+                                        </dl>
+                                        <dl class="desc_tool">
+                                            <dt>사용 프로그램 ::</dt>
+                                            <dd>Html5, Css3, JavaScript(ES6+), Photoshop, Figma</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="proto_btn">
+                                        <a href="#" class="prototype">프로토타입</a>
+                                        <a href="#" class="figma">피그마</a>
+                                        <a href="#" class="original_site">원본사이트<img src="./images/arrow_upward_alt.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="project_bg"></div>
+                            </div>
+                        </div>
+                        <div class="pagination_btn">
+                            <div class="next_prev_btn">
+                                <div class="swiper-button-prev">
+                                    <svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_59_71" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                    <rect width="24" height="24" "/>
+                                    </mask>
+                                    <g mask="url(#mask0_59_71)">
+                                    <path d="M10 21.3076L0.692253 11.9999L10 2.69214L11.0635 3.75564L2.81925 11.9999L11.0635 20.2441L10 21.3076Z" />
+                                    </g>
+                                    </svg>
+                                    </div>
+                                <div class="swiper-button-next">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_59_72" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                    <rect x="24" y="24" width="24" height="24" transform="rotate(-180 24 24)" />
+                                    </mask>
+                                    <g mask="url(#mask0_59_72)">
+                                    <path d="M14 2.69236L23.3078 12.0001L14 21.3079L12.9365 20.2444L21.1808 12.0001L12.9365 3.75586L14 2.69236Z"/>
+                                    </g>
+                                    </svg>
+                                    </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="banner_details">
+                <h2 class="title">Banner&Details</h2>
+                <div class="banner_details_inner">
+                    <div class="swiper" id="design_top_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/profile.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/profile.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/profile.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/profile.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/profile.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper" id="design_bottom_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/profile.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/profile.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/profile.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/profile.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/profile.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="contact_inner">
+                    <div class="center">
+                        <p class="sub">변화하는 트렌드와 함께 나아가는 <em>퍼블리셔</em>가 되겠습니다.</p>
+                        <h2 class="main">THANK YOU</h2>
+                    </div>
+                    <div class="contact_info">
+                        <span class="address">tlswndgns99@gmail.com</span>
+                        <span class="phone">82+ 10 6581 9971</span>
+                        <img src="./images/qr_code.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
 </body>
 </html>

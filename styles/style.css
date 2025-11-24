@@ -1,0 +1,446 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#wrap {
+  background-color: #f9f9f9;
+}
+#wrap header {
+  padding: 0 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  z-index: 999;
+  height: 75px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+#wrap header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 80px;
+}
+#wrap header nav ul li {
+  font-size: 0.938rem;
+  color: #bbb;
+}
+#wrap header nav ul .active {
+  color: #222;
+}
+#wrap header .logo {
+  max-width: 60px;
+  display: block;
+}
+#wrap header .logo img {
+  width: 100%;
+  height: auto;
+}
+#wrap main #home {
+  background-image: url(/images/pattern/main_bg_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#wrap main #home .home_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrap main #home .home_inner .year {
+  color: transparent;
+  -webkit-text-stroke: 1px #222;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: -8%;
+  top: -35%;
+}
+#wrap main #home .home_inner .title {
+  font-size: 100px;
+  font-weight: 700;
+  color: #222;
+}
+#wrap main #home .home_inner .name {
+  font-size: 22px;
+  font-weight: 300;
+  color: #222;
+  position: absolute;
+  right: -13%;
+}
+#wrap main #profile {
+  height: 100vh;
+}
+#wrap main #profile .profile_inner {
+  padding: 200px 350px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#wrap main #profile .profile_inner .section {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #00D6FF;
+}
+#wrap main #profile .profile_inner .left_content {
+  position: relative;
+}
+#wrap main #profile .profile_inner .left_content .introduction {
+  position: absolute;
+  top: -80px;
+  font-size: 24px;
+  white-space: nowrap;
+  line-height: 150%;
+}
+#wrap main #profile .profile_inner .left_content .introduction span {
+  font-weight: 500;
+}
+#wrap main #profile .profile_inner .left_content .introduction em {
+  font-weight: 600;
+  color: #00D6FF;
+}
+#wrap main #profile .profile_inner .left_content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+#wrap main #profile .profile_inner .left_content .row {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  padding: 10px;
+}
+#wrap main #profile .profile_inner .left_content .row .row_in .years {
+  font-size: 0.75rem;
+  color: #999;
+}
+#wrap main #profile .profile_inner .left_content .picture {
+  margin: 0 auto;
+  width: 177px;
+  height: 236px;
+}
+#wrap main #profile .profile_inner .left_content .picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#wrap main #profile .profile_inner .left_content .about .row_top {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+#wrap main #profile .profile_inner .left_content .about .row_top .name {
+  font-size: 18px;
+  font-weight: 500;
+}
+#wrap main #profile .profile_inner .left_content .about .row {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+#wrap main #profile .profile_inner .right_content {
+  width: 650px;
+  margin-bottom: 20px;
+}
+#wrap main #profile .profile_inner .right_content .skill_wrap {
+  padding: 12px 10px;
+}
+#wrap main #profile .profile_inner .right_content .skill_wrap .skill_category {
+  margin-bottom: 20px;
+}
+#wrap main #profile .profile_inner .right_content .skill_wrap .skill_category .category_title {
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  margin-left: 20px;
+}
+#wrap main #profile .profile_inner .right_content .skill_wrap .skill_category .category_title::after {
+  content: "";
+  display: block;
+  border: 1px solid #00D6FF;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: -20px;
+}
+#wrap main #profile .profile_inner .right_content .skill_wrap .skill_category .skill-list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+#wrap main #profile .profile_inner .right_content .skill_wrap .skill_category .skill-list .skill-item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#wrap main #profile .profile_inner .right_content .skill_wrap .skill_category .skill-list .skill-item dt {
+  position: relative;
+  padding-left: 30px;
+}
+#wrap main #profile .profile_inner .right_content .skill_wrap .skill_category .skill-list .skill-item dt::after {
+  content: "";
+  display: block;
+  background-color: #00D6FF;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 10px;
+}
+#wrap main #profile .profile_inner .right_content .skill_wrap .skill_category .skill-list .skill-item dd {
+  background-color: #fff;
+  font-size: 0.938rem;
+  padding: 0 5px;
+}
+#wrap main #project .project_inner .swiper {
+  position: relative;
+  height: 100vh;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info {
+  padding: 170px 50px 0;
+  flex: 0 0 33%;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .top .sequence {
+  font-size: 20px;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .top .title {
+  margin-top: 10px;
+  font-size: 56px;
+  font-weight: 700;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .top .title span {
+  font-size: 32px;
+  margin-left: 10px;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+  padding: 145px 0 200px;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc dt {
+  font-size: 18px;
+  display: flex;
+  justify-content: end;
+  width: 110px;
+  align-items: center;
+  font-weight: 500;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc dd {
+  justify-content: start;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc .desc_period {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  align-items: center;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc .desc_contribution {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  align-items: center;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc .desc_tool {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  align-items: center;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .proto_btn {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  position: relative;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .proto_btn .prototype {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .proto_btn .figma {
+  width: 100%;
+  height: 50px;
+  color: #777;
+  background: #eee;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .proto_btn .original_site {
+  color: #777;
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .proto_btn .original_site img {
+  transform: translateY(12%);
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .project_bg {
+  flex: 1;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .sequence {
+  color: #DD8686;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .prototype {
+  background: #DD8686;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .project_bg {
+  background: linear-gradient(90deg, #e38b8c 0%, #F0B2B3 33%, #F7D6D6 66%, #f9f9f9 100%);
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .sequence {
+  color: #4D83FF;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .prototype {
+  background: #4D83FF;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .project_bg {
+  background: linear-gradient(90deg, #4D83FF 0%, #82A6FF 50%, #BDD1FF 75%, #FFFFFF 100%);
+}
+#wrap main #project .project_inner .swiper .pagination_btn {
+  position: absolute;
+  bottom: 35px;
+  left: 5px;
+  width: 100px;
+}
+#wrap main #project .project_inner .swiper .pagination_btn .next_prev_btn {
+  position: absolute;
+  right: 15px;
+  z-index: 100;
+}
+#wrap main #project .project_inner .swiper .pagination_btn .next_prev_btn .swiper-button-next, #wrap main #project .project_inner .swiper .pagination_btn .next_prev_btn .swiper-button-prev {
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  color: #aaa;
+  transition: color 0.3s;
+}
+#wrap main #project .project_inner .swiper .pagination_btn .next_prev_btn .swiper-button-next svg, #wrap main #project .project_inner .swiper .pagination_btn .next_prev_btn .swiper-button-prev svg {
+  fill: currentColor;
+}
+#wrap main #project .project_inner .swiper .pagination_btn .next_prev_btn .swiper-button-next {
+  left: 20px;
+}
+#wrap main #project .project_inner .swiper .pagination_btn .next_prev_btn .swiper-button-next:hover, #wrap main #project .project_inner .swiper .pagination_btn .next_prev_btn .swiper-button-prev:hover {
+  color: #333;
+}
+#wrap main #project .project_inner .swiper .pagination_btn .swiper-pagination {
+  color: #555;
+  font-size: 14px;
+}
+#wrap main #project .project_inner .swiper .pagination_btn .swiper-pagination-total {
+  color: #777;
+}
+#wrap main #banner_details {
+  padding: 0 350px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#wrap main #banner_details .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #00D6FF;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80px;
+}
+#wrap main #banner_details .banner_details_inner {
+  height: 675px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#wrap main #banner_details .banner_details_inner #design_top_swiper {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 530px;
+}
+#wrap main #banner_details .banner_details_inner #design_top_swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+#wrap main #banner_details .banner_details_inner #design_bottom_swiper {
+  width: 100%;
+  height: 130px;
+}
+#wrap main #banner_details .banner_details_inner #design_bottom_swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+#wrap main #contact {
+  background-image: url(/images/pattern/main_bg_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#wrap main #contact .contact_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrap main #contact .contact_inner .center {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#wrap main #contact .contact_inner .center .sub {
+  font-size: 24px;
+  font-weight: 300;
+}
+#wrap main #contact .contact_inner .center .sub em {
+  font-weight: 600;
+  color: #00D6FF;
+}
+#wrap main #contact .contact_inner .center .main {
+  font-size: 82px;
+  font-weight: 700;
+}
+#wrap main #contact .contact_inner .contact_info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#wrap main #contact .contact_inner .contact_info img {
+  width: 150px;
+  height: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
