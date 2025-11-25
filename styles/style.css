@@ -300,6 +300,16 @@
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .proto_btn .original_site img {
   transform: translateY(12%);
 }
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .mokup_img {
+  position: absolute;
+  max-width: 1300px;
+  top: -13%;
+  right: -5%;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .mokup_img img {
+  width: 100%;
+  height: auto;
+}
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .project_bg {
   flex: 1;
 }

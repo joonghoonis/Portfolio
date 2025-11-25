@@ -178,6 +178,10 @@
                                     }
                                 }
                             }
+                            .mokup_img {
+                                position: absolute; max-width: 1300px; top:-13%; right:-5%;
+                                img {width: 100%; height: auto;}
+                            }
                             .project_bg{flex: 1;}
                         }
                         .project_01 {  
