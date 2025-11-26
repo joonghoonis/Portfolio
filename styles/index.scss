@@ -147,7 +147,8 @@
         }
         #project {
             .project_inner {
-                .swiper{position:relative;
+                .swiper{
+                    position:relative;
                     height: 100vh;
                     .swiper-wrapper {
                         .swiper-slide {
@@ -190,59 +191,21 @@
                                     }
                                 }
                             }
-                            .mokup_img {
-                                position: absolute; max-width: 1300px; top:-13%; right:-5%;
-                                img {width: 100%; height: auto;}
+                            .mockup_img {
+                                position: absolute; max-width: 1500px; top:-5%; right:-15%;
+                                img {width: 100%; height: auto;}z-index: 20;
+                            }
+                            .tablet_mockup {
+                                position: absolute; max-width: 500px; top: 24%; right:36%;
+                                img {width: 100%; height: auto;} z-index:10;
+                            }
+                            .phone_mockup {
+                                position: absolute; max-width: 150px; top: 48%; right:38%;
+                                img {width: 100%; height: auto;} z-index:30;
                             }
                             .project_bg{flex: 1;}
                         }
-                        .project_01 {  
-                            .left_info{
-                                .sequence {color:#E38B8C}
-                                .prototype{
-                                    background: #E38B8C;
-                                    &:hover {
-                                        background-color: #D16A6B;
-                                    }
-                                }
-                                .figma:hover{
-                                    background: #eed2d3;
-                                    color:#fff
-                                }
-                            }
-                            .project_bg {
-                                background: linear-gradient(
-                                90deg,
-                                #E38B8C 0%,   /* 진한 로즈 */
-                                #F0B2B3 55%, /* 파스텔 로즈 */
-                                #FDE6E6 100% /* 거의 화이트에 가까운 핑크 */
-                            );}
-
-                            }
-                        .project_02 {
-                            .left_info{
-                                .sequence {color: #87A6EE;}
-                                .prototype{
-                                    background: #87A6EE;
-                                    &:hover {
-                                        background-color: #6E8ED9;
-                                    }
-                                }
-                                .figma:hover{
-                                    background: #c3cee7;
-                                    color:#fff
-                                }
-                                }
-                            .project_bg {
-                                background: linear-gradient(
-                                90deg,
-                                #87A6EE 0%,
-                                #9DB1F0 55%,
-                                #FFFFFF 100%
-                                );
-                            }
-                        }
-                        .project_03 {
+                        .project_01 {
                             .left_info{
                                 .sequence{
                                     color: #F18DBD ;
@@ -261,36 +224,93 @@
                             .project_bg {background: linear-gradient(
                                 90deg,
                                 #F18DBD 0%,    /* 시작 - 진한 핑크 */
-                                #F7BBD3 55%,  /* 중간 - 파스텔 톤 */
-                                #FEEAF3 100%  /* 끝 - 거의 화이트 */
+                                #F7BBD3 33%,  /* 중간 - 파스텔 톤 */
+                                #FEEAF3 66%, /* 끝 - 거의 화이트 */
+                                #f9f9f9 100% 
                                 );
                             }
                         }
-                        .project_04 {
+                        .project_02 {  
+                            .mockup_img {
+                                max-width:4000px;height:1400px;top:-18%; right:-15%;
+                                img {width: 100%; height: 100%;object-fit: cover;}
+                            }
                             .left_info{
-                                .sequence{ 
-                                    color: #EBD29B ;
-                                }
+                                .sequence {color:#E38B8C}
                                 .prototype{
-                                    background-color: #EBD29B ;
+                                    background: #E38B8C;
                                     &:hover {
-                                        background-color:#D9BD84;
+                                        background-color: #D16A6B;
                                     }
                                 }
                                 .figma:hover{
-                                    background:#e7dcc3 ;
+                                    background: #eed2d3;
                                     color:#fff
                                 }
                             }
-                            .project_bg { background: linear-gradient(
+                            .project_bg {
+                                background: linear-gradient(
                                 90deg,
-                                #EBD29B 0%,    /* 시작 - 따뜻한 라이트 옐로우 */
-                                #F3E3C1 55%,  /* 중간 - 파스텔 베이지 */
-                                #FFF7EB 100%  /* 끝 - 아이보리 화이트 */
-                                );
+                                #E38B8C 0%,   /* 진한 로즈 */
+                                #F0B2B3 33%, /* 파스텔 로즈 */
+                                #FDE6E6 66%,/* 거의 화이트에 가까운 핑크 */
+                                #f9f9f9 100%
+                            );}
+                            }
+                            .project_03 {
+                                .left_info{
+                                    .sequence{ 
+                                        color: #EBD29B ;
+                                    }
+                                    .prototype{
+                                        background-color: #EBD29B ;
+                                        &:hover {
+                                            background-color:#D9BD84;
+                                        }
+                                    }
+                                    .figma:hover{
+                                        background:#e7dcc3 ;
+                                        color:#fff
+                                    }
+                                }
+                                .project_bg { background: linear-gradient(
+                                    90deg,
+                                    #EBD29B 0%,    /* 시작 - 따뜻한 라이트 옐로우 */
+                                    #F3E3C1 33%,  /* 중간 - 파스텔 베이지 */
+                                    #FFF7EB 66%,  /* 끝 - 아이보리 화이트 */
+                                    #f9f9f9 100%  /* 끝 - 아이보리 화이트 */
+                                    );
+                                }
+                            }
+                            .project_04 {
+                                .left_info{
+                                    .sequence {color: #87A6EE;}
+                                    .prototype{
+                                        background: #87A6EE;
+                                        &:hover {
+                                            background-color: #6E8ED9;
+                                        }
+                                    }
+                                    .figma:hover{
+                                        background: #c3cee7;
+                                        color:#fff
+                                    }
+                                }
+                                .project_bg {
+                                    background: linear-gradient(
+                                        90deg,
+                                        #87A6EE 0%,
+                                        #b3bee2 33%,
+                                        #f9f9f9 66%,
+                                        #f9f9f9 100%
+                                        );
+                                    }
+                                .mockup_img {
+                                    max-width:4000px;height:1400px;top:-18%; right:-15%;
+                                    img {width: 100%; height: 100%;object-fit: cover;}
+                                }
                             }
                         }
-                    }
                     .pagination_btn {
                         position: absolute;bottom:35px; left: 22px;
                         width: 100px; 

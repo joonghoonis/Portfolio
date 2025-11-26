@@ -313,82 +313,133 @@
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .proto_btn .original_site img {
   transform: translateY(12%);
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .mokup_img {
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .mockup_img {
   position: absolute;
-  max-width: 1300px;
-  top: -13%;
-  right: -5%;
+  max-width: 1500px;
+  top: -5%;
+  right: -15%;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .mokup_img img {
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .mockup_img img {
   width: 100%;
   height: auto;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .mockup_img {
+  z-index: 20;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .tablet_mockup {
+  position: absolute;
+  max-width: 500px;
+  top: 24%;
+  right: 36%;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .tablet_mockup img {
+  width: 100%;
+  height: auto;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .tablet_mockup {
+  z-index: 10;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .phone_mockup {
+  position: absolute;
+  max-width: 150px;
+  top: 48%;
+  right: 38%;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .phone_mockup img {
+  width: 100%;
+  height: auto;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .phone_mockup {
+  z-index: 30;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .project_bg {
   flex: 1;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .sequence {
-  color: #E38B8C;
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .prototype {
-  background: #E38B8C;
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .prototype:hover {
-  background-color: #D16A6B;
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .figma:hover {
-  background: #eed2d3;
-  color: #fff;
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .project_bg {
-  background: linear-gradient(90deg, #E38B8C 0%, #F0B2B3 55%, #FDE6E6 100%);
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .sequence {
-  color: #87A6EE;
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .prototype {
-  background: #87A6EE;
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .prototype:hover {
-  background-color: #6E8ED9;
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .figma:hover {
-  background: #c3cee7;
-  color: #fff;
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .project_bg {
-  background: linear-gradient(90deg, #87A6EE 0%, #9DB1F0 55%, #FFFFFF 100%);
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .left_info .sequence {
   color: #F18DBD;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .left_info .prototype {
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .prototype {
   background-color: #F18DBD;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .left_info .prototype:hover {
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .prototype:hover {
   background-color: #E078A9;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .left_info .figma:hover {
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .figma:hover {
   background: #eecadb;
   color: #fff;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .project_bg {
-  background: linear-gradient(90deg, #F18DBD 0%, #F7BBD3 55%, #FEEAF3 100%);
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .project_bg {
+  background: linear-gradient(90deg, #F18DBD 0%, #F7BBD3 33%, #FEEAF3 66%, #f9f9f9 100%);
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .left_info .sequence {
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .mockup_img {
+  max-width: 4000px;
+  height: 1400px;
+  top: -18%;
+  right: -15%;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .mockup_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .sequence {
+  color: #E38B8C;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .prototype {
+  background: #E38B8C;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .prototype:hover {
+  background-color: #D16A6B;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .left_info .figma:hover {
+  background: #eed2d3;
+  color: #fff;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .project_bg {
+  background: linear-gradient(90deg, #E38B8C 0%, #F0B2B3 33%, #FDE6E6 66%, #f9f9f9 100%);
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .left_info .sequence {
   color: #EBD29B;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .left_info .prototype {
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .left_info .prototype {
   background-color: #EBD29B;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .left_info .prototype:hover {
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .left_info .prototype:hover {
   background-color: #D9BD84;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .left_info .figma:hover {
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .left_info .figma:hover {
   background: #e7dcc3;
   color: #fff;
 }
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .project_bg {
+  background: linear-gradient(90deg, #EBD29B 0%, #F3E3C1 33%, #FFF7EB 66%, #f9f9f9 100%);
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .left_info .sequence {
+  color: #87A6EE;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .left_info .prototype {
+  background: #87A6EE;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .left_info .prototype:hover {
+  background-color: #6E8ED9;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .left_info .figma:hover {
+  background: #c3cee7;
+  color: #fff;
+}
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .project_bg {
-  background: linear-gradient(90deg, #EBD29B 0%, #F3E3C1 55%, #FFF7EB 100%);
+  background: linear-gradient(90deg, #87A6EE 0%, #b3bee2 33%, #f9f9f9 66%, #f9f9f9 100%);
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .mockup_img {
+  max-width: 4000px;
+  height: 1400px;
+  top: -18%;
+  right: -15%;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .mockup_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #wrap main #project .project_inner .swiper .pagination_btn {
   position: absolute;

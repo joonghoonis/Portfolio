@@ -1,5 +1,5 @@
 const projectSwiper = new Swiper('#project_swiper', {
-    autoplay: { delay: 5000 },
+    autoplay: { delay: 500000 },
     loop: true,
     speed:1000,
     pagination: {
