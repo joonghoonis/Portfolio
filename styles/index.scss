@@ -42,7 +42,7 @@
         }
         > div {height:100vh;box-sizing: border-box;} 
         #home {
-            background-image: url(/images/pattern/main_bg_1.jpg);
+            background-image: url(../images/pattern/main_bg_1.jpg);
             @include bgimg; width: 100%; position: relative;
             .home_inner {
                 position: absolute; 
@@ -357,7 +357,7 @@
             }
         }
         #contact {
-            background-image: url(/images/pattern/main_bg_1.jpg); @include bgimg;
+            background-image: url(../images/pattern/main_bg_1.jpg); @include bgimg;
             width: 100%;
             position: relative;
             .contact_inner {

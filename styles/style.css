@@ -59,7 +59,7 @@
   box-sizing: border-box;
 }
 #wrap main #home {
-  background-image: url(/images/pattern/main_bg_1.jpg);
+  background-image: url(../images/pattern/main_bg_1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -464,7 +464,7 @@
   transition-timing-function: linear !important;
 }
 #wrap main #contact {
-  background-image: url(/images/pattern/main_bg_1.jpg);
+  background-image: url(../images/pattern/main_bg_1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
