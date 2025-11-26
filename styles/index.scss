@@ -171,7 +171,17 @@
                                     dd {justify-content: start;}
                                     .desc_period {@include flex-row;gap: 20px;align-items: center;}
                                     .desc_contribution {@include flex-row;gap: 20px;align-items: center;}
-                                    .desc_tool {@include flex-row;gap: 20px;align-items: center;}
+                                    .desc_tool {position: relative;
+                                        @include flex-row;gap: 20px;align-items: center;
+                                        .cafe24 {
+                                            position: absolute; right: -37px; top:1px;
+                                            svg {
+                                                height: 12px;
+                                                path {fill: #222
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                                 .proto_btn {
                                     @include flex-row; gap:20px; position: relative;
