@@ -51,7 +51,7 @@
 #wrap main {
   height: 100vh;
 }
-#wrap main .swiper-wrapper {
+#wrap main > .swiper-wrapper {
   width: 100%;
 }
 #wrap main > div {
@@ -501,7 +501,6 @@
 }
 #wrap main #banner_details .banner_details_inner #design_top_swiper {
   width: 100%;
-  margin-bottom: 15px;
   height: 530px;
 }
 #wrap main #banner_details .banner_details_inner #design_top_swiper .swiper-wrapper {
@@ -513,6 +512,15 @@
 }
 #wrap main #banner_details .banner_details_inner #design_bottom_swiper .swiper-wrapper {
   transition-timing-function: linear !important;
+}
+#wrap main #banner_details .banner_details_inner #design_top_swiper .swiper-wrapper .swiper-slide, #wrap main #banner_details .banner_details_inner #design_bottom_swiper .swiper-wrapper .swiper-slide {
+  width: 430px;
+  height: 530px;
+}
+#wrap main #banner_details .banner_details_inner #design_top_swiper .swiper-wrapper .swiper-slide img, #wrap main #banner_details .banner_details_inner #design_bottom_swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #wrap main #contact {
   background-image: url(../images/pattern/main_bg_1.jpg);

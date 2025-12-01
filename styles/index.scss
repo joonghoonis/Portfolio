@@ -37,7 +37,7 @@
     }
     main {
         height: 100vh;
-        .swiper-wrapper {
+        > .swiper-wrapper {
             width: 100%;
         }
         > div {height:100vh;box-sizing: border-box;} 
@@ -356,12 +356,11 @@
                 flex-direction: column;
                 gap: 15px; 
                 #design_top_swiper {
-                    width: 100%;margin-bottom: 15px;
+                    width: 100%;
                     height: 530px;
                     .swiper-wrapper {
                         transition-timing-function: linear !important; 
                         .swiper-slide {
-
                         }
                     }
                 }
@@ -371,6 +370,16 @@
                     .swiper-wrapper {
                         transition-timing-function: linear !important; 
                         .swiper-slide {
+                        }
+                    }
+                }
+                #design_top_swiper,#design_bottom_swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: 430px;height:530px;
+                            img {
+                                width: 100%; height: 100%; object-fit: cover;
+                            }
                         }
                     }
                 }
