@@ -51,7 +51,7 @@
 #wrap main {
   height: 100vh;
 }
-#wrap main .swiper-wrapper {
+#wrap main > .swiper-wrapper {
   width: 100%;
 }
 #wrap main > div {
@@ -323,28 +323,29 @@
   position: absolute;
   right: 0;
   bottom: -30px;
+  z-index: 100;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .proto_btn .original_site img {
   transform: translateY(12%);
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .mockup_img {
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .desktop_mockup {
   position: absolute;
-  max-width: 1500px;
-  top: -5%;
-  right: -15%;
+  max-width: 800px;
+  top: 26%;
+  right: 3%;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .mockup_img img {
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .desktop_mockup img {
   width: 100%;
   height: auto;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .mockup_img {
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .desktop_mockup {
   z-index: 20;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .tablet_mockup {
   position: absolute;
-  max-width: 500px;
+  max-width: 400px;
   top: 24%;
-  right: 36%;
+  right: 40%;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .tablet_mockup img {
   width: 100%;
@@ -357,7 +358,7 @@
   position: absolute;
   max-width: 150px;
   top: 48%;
-  right: 38%;
+  right: 37%;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .phone_mockup img {
   width: 100%;
@@ -385,13 +386,13 @@
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .project_bg {
   background: linear-gradient(90deg, #F18DBD 0%, #F7BBD3 33%, #FEEAF3 66%, #f9f9f9 100%);
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .mockup_img {
-  max-width: 4000px;
-  height: 1400px;
-  top: -18%;
-  right: -15%;
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .desktop_mockup {
+  max-width: 1050px;
+  height: auto;
+  top: 18%;
+  right: 5%;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .mockup_img img {
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .desktop_mockup img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -411,6 +412,17 @@
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .project_bg {
   background: linear-gradient(90deg, #E38B8C 0%, #F0B2B3 33%, #FDE6E6 66%, #f9f9f9 100%);
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .desktop_mockup {
+  max-width: 4000px;
+  height: 1400px;
+  top: -18%;
+  right: -15%;
+}
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .desktop_mockup img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .left_info .sequence {
   color: #EBD29B;
@@ -444,13 +456,13 @@
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .project_bg {
   background: linear-gradient(90deg, #87A6EE 0%, #b3bee2 33%, #f9f9f9 66%, #f9f9f9 100%);
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .mockup_img {
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .desktop_mockup {
   max-width: 4000px;
   height: 1400px;
   top: -18%;
   right: -15%;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .mockup_img img {
+#wrap main #project .project_inner .swiper .swiper-wrapper .project_04 .desktop_mockup img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -490,7 +502,7 @@
   color: #777;
 }
 #wrap main #banner_details {
-  padding: 0 350px;
+  padding: 50px 350px 0;
   width: 100%;
   position: relative;
   display: flex;
@@ -505,7 +517,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 80px;
+  top: 110px;
 }
 #wrap main #banner_details .banner_details_inner {
   height: 675px;
@@ -515,7 +527,6 @@
 }
 #wrap main #banner_details .banner_details_inner #design_top_swiper {
   width: 100%;
-  margin-bottom: 15px;
   height: 530px;
 }
 #wrap main #banner_details .banner_details_inner #design_top_swiper .swiper-wrapper {
@@ -527,6 +538,15 @@
 }
 #wrap main #banner_details .banner_details_inner #design_bottom_swiper .swiper-wrapper {
   transition-timing-function: linear !important;
+}
+#wrap main #banner_details .banner_details_inner #design_top_swiper .swiper-wrapper .swiper-slide, #wrap main #banner_details .banner_details_inner #design_bottom_swiper .swiper-wrapper .swiper-slide {
+  width: 430px;
+  height: 530px;
+}
+#wrap main #banner_details .banner_details_inner #design_top_swiper .swiper-wrapper .swiper-slide img, #wrap main #banner_details .banner_details_inner #design_bottom_swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #wrap main #contact {
   background-image: url(../images/pattern/main_bg_1.jpg);
@@ -580,6 +600,41 @@
 #wrap main #contact .contact_inner .contact_info img {
   width: 150px;
   height: 150px;
+}
+#wrap #popup {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+#wrap #popup.active {
+  display: flex;
+}
+#wrap #popup .popup_inner {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+#wrap #popup .popup_inner .popup_img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  background: #000;
+}
+#wrap #popup .popup_inner .popup_close {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  color: #fff;
+  cursor: pointer;
+}
+#wrap #popup .popup_inner .popup_close svg {
+  width: 30px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
