@@ -60,3 +60,28 @@ document.querySelectorAll('header nav ul li').forEach((item, index) => {
         fullPageSwiper.slideTo(index); 
     });
 });
+const popup = document.querySelector('#popup');
+const popupImg = popup.querySelector('.popup_img');
+const popupClose = popup.querySelector('.popup_close');
+const designThumbs = document.querySelectorAll('#banner_details .swiper-slide button');
+
+designThumbs.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        const img = btn.querySelector('img');
+        if (!img) return;
+        popupImg.src = img.src;
+        popup.classList.add('active');
+    });
+});
+
+popupClose.addEventListener('click', () => {
+    popup.classList.remove('active');
+    popupImg.src = '';
+});
+
+popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
+        popup.classList.remove('active');
+        popupImg.src = '';
+    }
+});

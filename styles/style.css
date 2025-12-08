@@ -586,5 +586,40 @@
   width: 150px;
   height: 150px;
 }
+#wrap #popup {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+#wrap #popup.active {
+  display: flex;
+}
+#wrap #popup .popup_inner {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+#wrap #popup .popup_inner .popup_img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  background: #000;
+}
+#wrap #popup .popup_inner .popup_close {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  color: #fff;
+  cursor: pointer;
+}
+#wrap #popup .popup_inner .popup_close svg {
+  width: 30px;
+  height: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -382,13 +382,14 @@
                         .swiper-slide {
                             width: 430px;height:530px;
                             img {
-                                width: 100%; height: 100%; object-fit: cover;
+                                width: 100%; height: 100%; object-fit: cover;   
                             }
                         }
                     }
                 }
             }
         }
+
         #contact {
             background-image: url(../images/pattern/main_bg_1.jpg); @include bgimg;
             width: 100%;
@@ -412,6 +413,37 @@
                     }
                 }
             } 
+        }
+    }
+    #popup{
+        position: fixed; inset:0;
+        display: none;z-index:10000;
+        justify-content: center;
+        align-items: center; background: rgba(0, 0, 0, 0.7);
+        &.active {
+            display: flex;  
+        }
+        .popup_inner {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            .popup_img {
+                display: block;
+                max-width: 90vw;
+                max-height: 90vh;
+                object-fit: contain;
+                background: #000;
+            }
+            .popup_close {
+                position: absolute;
+                top: -30px;
+                right: -30px;
+                color: #fff;
+                cursor: pointer;
+                svg {
+                    width: 30px; height: 30px;
+                }
+            }
         }
     }
     footer {}
