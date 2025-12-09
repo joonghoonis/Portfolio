@@ -157,10 +157,15 @@
                                 padding:170px 50px 0;
                                 flex: 0 0 33%; 
                                 .top {
-                                    .sequence {font-size:20px;}
+                                    position: relative;
+                                    .sequence {
+                                        font-size:20px;
+                                    }
                                     .title {margin-top: 10px;font-size: 56px; font-weight:$font-weight-bold;
                                         span {font-size:32px; margin-left: 10px;}
+                                        
                                     }
+                                    
                                 }
                                 .desc {
                                     @include flex-col; gap:25px;
@@ -173,13 +178,11 @@
                                     .desc_contribution {@include flex-row;gap: 20px;align-items: center;}
                                     .desc_tool {position: relative;
                                         @include flex-row;gap: 20px;align-items: center;
-                                        .cafe24 {
-                                            position: absolute; right: -37px; top:1px;
-                                            svg {
-                                                height: 12px;
-                                                path {fill: #222
-                                                }
-                                            }
+                                    }
+                                    .cafe24 {
+                                        position: absolute; top: 30px;left :115px;
+                                        svg{
+                                            height: 15px;
                                         }
                                     }
                                 }

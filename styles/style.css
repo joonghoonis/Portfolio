@@ -229,6 +229,9 @@
   padding: 170px 50px 0;
   flex: 0 0 33%;
 }
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .top {
+  position: relative;
+}
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .top .sequence {
   font-size: 20px;
 }
@@ -277,16 +280,13 @@
   gap: 20px;
   align-items: center;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc .desc_tool .cafe24 {
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc .cafe24 {
   position: absolute;
-  right: -37px;
-  top: 1px;
+  top: 30px;
+  left: 115px;
 }
-#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc .desc_tool .cafe24 svg {
-  height: 12px;
-}
-#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc .desc_tool .cafe24 svg path {
-  fill: #222;
+#wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .desc .cafe24 svg {
+  height: 15px;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .proto_btn {
   display: flex;
