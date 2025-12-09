@@ -93,6 +93,16 @@
   position: absolute;
   right: -13%;
 }
+#wrap main #home .home_inner .design {
+  color: #00D6FF;
+  position: absolute;
+  top: -75px;
+  left: 30%;
+  font-size: 72px;
+  font-weight: 600;
+  animation: text_design 0.9s linear;
+  transform: rotate(-18deg);
+}
 #wrap main #profile .profile_inner {
   padding: 200px 350px;
   display: flex;
@@ -635,6 +645,22 @@
 #wrap #popup .popup_inner .popup_close svg {
   width: 30px;
   height: 30px;
+}
+@keyframes text_design {
+  0% {
+    transform: translateY(-600px) rotate(0deg);
+    opacity: 0;
+  }
+  55% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-70px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-18deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

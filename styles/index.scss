@@ -55,6 +55,11 @@
                 .name {font-size: 22px; font-weight: 300; color: #222;
                     position: absolute; right:-13%;
                 }
+                .design{
+                    color: #00D6FF; position: absolute; top: -75px; left: 30%;
+                    font-size: 72px;font-weight: $font-weight-semi;
+                    animation: text_design .9s linear;transform: rotate(-18deg);
+                }
             }
         }
         #profile {
@@ -461,3 +466,20 @@
     }
     footer {}
 }
+@keyframes text_design {
+    0% {
+        transform: translateY(-600px) rotate(0deg);
+        opacity: 0;
+    }
+    55% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-70px) rotate(3deg);  // 1회 반동
+    }
+    100% {
+        transform: translateY(0) rotate(-18deg);   // 최종 각도
+    }
+}
+
