@@ -23,13 +23,15 @@ const designTopSwiper = new Swiper ('#design_top_swiper', {
     autoplay: {delay : 0,},
     slidesPerView: 3,
     spaceBetween: 15,
-    speed:8500,
+    speed:6500,
+    allowTouchMove: false,  
 })
 const designBottomSwiper = new Swiper ('#design_bottom_swiper', {
     loop: true,
     slidesPerView: 3.5,
     autoplay: {delay : 0,},
-    speed:12000,
+    speed:10000,
+    allowTouchMove: false,  
     spaceBetween: 15
 })
 const fullPageSwiper = new Swiper('main', {

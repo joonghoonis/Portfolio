@@ -9,6 +9,11 @@
         @include flex-row; justify-content: space-between; align-items: center;
         background-color: $color-white;z-index: 999;height:75px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-user-drag: none;
         nav {
             ul {
                 @include flex-row; gap: 80px;
@@ -404,7 +409,7 @@
                         .swiper-slide {
                             width: 430px;height:530px;
                             img {
-                                width: 100%; height: 100%; object-fit: cover;   
+                                width: 100%; height: 100%; object-fit: cover;
                             }
                         }
                     }
@@ -442,6 +447,11 @@
         display: none;z-index:10000;
         justify-content: center;
         align-items: center; background: rgba(0, 0, 0, 0.7);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-user-drag: none;
         &.active {
             display: flex;  
         }
