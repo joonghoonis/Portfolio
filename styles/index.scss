@@ -3,6 +3,7 @@
 
 #wrap {
     background-color: #f9f9f9;
+    white-space: nowrap;
     header {
         padding:0 70px; position:fixed; top:0; left: 0; right: 0;   
         @include flex-row; justify-content: space-between; align-items: center;
@@ -64,7 +65,7 @@
         }
         #profile {
             .profile_inner{
-                padding: 200px 350px;
+                padding: 200px 18.23%;
                 @include flex-row;  justify-content: space-between;
                 .section {
                     font-size: $font-size-18;font-weight: $font-weight-semi;
@@ -158,9 +159,11 @@
                     .swiper-wrapper {
                         .swiper-slide {
                             display: flex;
+                            overflow: hidden;
+                            width: 1920px;
                             .left_info{
                                 padding:170px 50px 0;
-                                flex: 0 0 33%; 
+                                flex: 0 0 633px;
                                 .top {
                                     position: relative;
                                     .sequence {
@@ -214,14 +217,14 @@
                                 img {width: 100%; height: auto;}z-index: 20;
                             }
                             .tablet_mockup {
-                                position: absolute; max-width: 400px; top: 24%; right:40%;
+                                position: absolute; max-width: 400px; top: 24%; right:60%;
                                 img {width: 100%; height: auto;} z-index:10;
                             }
                             .phone_mockup {
-                                position: absolute; max-width: 150px; top: 48%; right:37%;
+                                position: absolute; max-width: 150px; top: 48%; right:55%;
                                 img {width: 100%; height: auto;} z-index:30;
                             }
-                            .project_bg{flex: 1;}
+                            .project_bg{ flex: 0 0 1287px;position: relative;}
                         }
                         .project_01 {
                             .left_info{
@@ -250,7 +253,7 @@
                         }
                         .project_02 {  
                             .desktop_mockup {
-                                max-width:1050px;height:auto;top:18%; right:5%;
+                                max-width:1050px;height:auto;top:18%; right:10%;
                                 img {width: 100%; height: 100%;object-fit: cover;}
                             }
                             .left_info{
@@ -360,7 +363,7 @@
             }
         }
         #banner_details {
-            padding: 50px 350px 0;width: 100%;
+            padding: 100px 18.23% 0;width: 100%;
             position: relative;  
             display: flex;
             flex-direction: column;
@@ -370,7 +373,7 @@
                 position: absolute; 
                 left: 50%;
                 transform: translateX(-50%);
-                top:110px;
+                top:130px;
             }
             .banner_details_inner {
                 height: 675px;
@@ -396,6 +399,7 @@
                     }
                 }
                 #design_top_swiper,#design_bottom_swiper {
+                    min-width: 1290px;
                     .swiper-wrapper {
                         .swiper-slide {
                             width: 430px;height:530px;
@@ -419,7 +423,7 @@
                     .sub {font-size: 24px; font-weight: 300;
                         em {font-weight: $font-weight-semi;color: #00D6FF;}
                     }
-                    .main {font-size: 82px; font-weight: 700;}
+                    .main {font-size: 92px; font-weight: 700;}
                 }
                 .contact_info {
                     @include flex-col;@include flex-center; gap:10px; 

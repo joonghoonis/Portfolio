@@ -2,6 +2,7 @@ const projectSwiper = new Swiper('#project_swiper', {
     autoplay: { delay: 10000 },
     loop: true,
     speed:1000,
+    selidePerView:1,
     pagination: {
     el: '#project_swiper .swiper-pagination',
     type: 'fraction',

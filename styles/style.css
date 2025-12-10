@@ -6,6 +6,7 @@
 
 #wrap {
   background-color: #f9f9f9;
+  white-space: nowrap;
 }
 #wrap header {
   padding: 0 70px;
@@ -104,7 +105,7 @@
   transform: rotate(-18deg);
 }
 #wrap main #profile .profile_inner {
-  padding: 200px 350px;
+  padding: 200px 18.23%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -234,10 +235,12 @@
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide {
   display: flex;
+  overflow: hidden;
+  width: 1920px;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info {
   padding: 170px 50px 0;
-  flex: 0 0 33%;
+  flex: 0 0 633px;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .left_info .top {
   position: relative;
@@ -355,7 +358,7 @@
   position: absolute;
   max-width: 400px;
   top: 24%;
-  right: 40%;
+  right: 60%;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .tablet_mockup img {
   width: 100%;
@@ -368,7 +371,7 @@
   position: absolute;
   max-width: 150px;
   top: 48%;
-  right: 37%;
+  right: 55%;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .phone_mockup img {
   width: 100%;
@@ -378,7 +381,8 @@
   z-index: 30;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .swiper-slide .project_bg {
-  flex: 1;
+  flex: 0 0 1287px;
+  position: relative;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_01 .left_info .sequence {
   color: #F18DBD;
@@ -400,7 +404,7 @@
   max-width: 1050px;
   height: auto;
   top: 18%;
-  right: 5%;
+  right: 10%;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_02 .desktop_mockup img {
   width: 100%;
@@ -512,7 +516,7 @@
   color: #777;
 }
 #wrap main #banner_details {
-  padding: 50px 350px 0;
+  padding: 100px 18.23% 0;
   width: 100%;
   position: relative;
   display: flex;
@@ -527,7 +531,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 110px;
+  top: 130px;
 }
 #wrap main #banner_details .banner_details_inner {
   height: 675px;
@@ -548,6 +552,9 @@
 }
 #wrap main #banner_details .banner_details_inner #design_bottom_swiper .swiper-wrapper {
   transition-timing-function: linear !important;
+}
+#wrap main #banner_details .banner_details_inner #design_top_swiper, #wrap main #banner_details .banner_details_inner #design_bottom_swiper {
+  min-width: 1290px;
 }
 #wrap main #banner_details .banner_details_inner #design_top_swiper .swiper-wrapper .swiper-slide, #wrap main #banner_details .banner_details_inner #design_bottom_swiper .swiper-wrapper .swiper-slide {
   width: 430px;
@@ -587,7 +594,7 @@
   color: #00D6FF;
 }
 #wrap main #contact .contact_inner .center .main {
-  font-size: 82px;
+  font-size: 92px;
   font-weight: 700;
 }
 #wrap main #contact .contact_inner .contact_info {
