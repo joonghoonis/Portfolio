@@ -148,6 +148,11 @@
   gap: 10px;
   padding: 10px;
 }
+#wrap main #profile .profile_inner .left_content .row .row_in {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
 #wrap main #profile .profile_inner .left_content .row .row_in .years {
   font-size: 0.75rem;
   color: #999;
