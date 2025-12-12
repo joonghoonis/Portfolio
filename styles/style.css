@@ -438,10 +438,10 @@
   background: linear-gradient(90deg, #E38B8C 0%, #F0B2B3 33%, #FDE6E6 66%, #f9f9f9 100%);
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .desktop_mockup {
-  max-width: 4000px;
-  height: 1400px;
-  top: -18%;
-  right: -15%;
+  max-width: 1050px;
+  height: auto;
+  top: 18%;
+  right: 10%;
 }
 #wrap main #project .project_inner .swiper .swiper-wrapper .project_03 .desktop_mockup img {
   width: 100%;
